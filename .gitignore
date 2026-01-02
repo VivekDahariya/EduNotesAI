@@ -1,0 +1,16 @@
+# Python virtual environment
+venv/
+__pycache__/
+*.pyc
+
+# Node modules
+node_modules/
+
+# Local media (to keep repo light)
+temp/
+output/
+*.mp4
+*.pdf
+
+# Mac system files
+.DS_Store
