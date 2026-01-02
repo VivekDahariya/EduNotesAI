@@ -7,7 +7,7 @@ def get_blur_score(image):
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
     return cv2.Laplacian(gray, cv2.CV_64F).var()
 
-def filter_smart_frames(input_dir='temp/frames', output_dir='temp/filtered_frames', threshold=100.0):
+def filter_smart_frames(input_dir='temp/frames', output_dir='temp/filtered_frames', threshold=10.0):
     """
     Filters out blurry frames and keeps only the highest-quality unique shots.
     """
